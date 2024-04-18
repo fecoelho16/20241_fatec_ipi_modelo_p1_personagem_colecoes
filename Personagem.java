@@ -100,13 +100,22 @@ public class Personagem{
         }
     }
 
+    void atacar(Personagem outroPersonagem) {
+        if (outroPersonagem.energia > 0) {
+            outroPersonagem.energia--;
+            System.out.printf("%s atacou %s e reduziu sua energia em 1 ponto.\n", nome, outroPersonagem.nome);
+        } else {
+            System.out.printf("%s atacou %s, mas ele já estava sem energia.\n", nome, outroPersonagem.nome);
+        }
+    }
+
     public String toString(){
         StringBuilder sb = new StringBuilder();
         sb.append(nome).append(": (e:").append(energia).append(", f:").append(fome).append(", s:").append(sono).append(")\n");
         sb.append("Itens: ");
-        for (int i = 0; i < itens.tamanho(); i++) {
+        for (int i= 0; i < itens.tamanho(); i++) {
             sb.append(itens.getElementos()[i]).append(" ");
         }
         return sb.toString();
     }
-}  
+}
