@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        Personagem p1 = new Personagem();
-        Personagem p2 = new Personagem();
+        Personagem p1 = new Personagem(Scooby);
+        Personagem p2 = new Personagem(Sheldon);
         List<Personagem> personagens = new ArrayList<>();
         personagens.add(p1);
         personagens.add(p2);
