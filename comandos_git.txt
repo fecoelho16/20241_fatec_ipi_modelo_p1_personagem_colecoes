@@ -1,0 +1,8 @@
+git add
+//adiciona arquivos modificados ou novos ao próximo commit.
+
+git commit -m
+//cria um novo commit com as modificações adicionadas ao índice, com uma mensagem de commit descritiva.
+
+git push origin main
+//envia as modificações locais para um repositório remoto, como GitHub, atualizando a branch remota com as novas modificações.
